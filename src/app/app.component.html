@@ -1,0 +1,46 @@
+<div class="header">
+  <h1>Album App</h1>
+</div>
+
+<div class="body">
+  <div class="table-box">
+    <mat-form-field class="example-full-width">
+      <mat-label>Table name</mat-label>
+      <input matInput [(ngModel)]="tableName">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="describeTable()">Create table</button>
+  </div>
+
+  <div class="file-box">
+    <mat-form-field class="example-full-width">
+      <mat-label>Folder name</mat-label>
+      <input matInput [(ngModel)]="folderName">
+    </mat-form-field>
+
+    <mat-checkbox class="checkbox" [(ngModel)]="isVersioningEnabled">Versioning</mat-checkbox>
+    <mat-checkbox class="checkbox" [(ngModel)]="isEncryptionEnabled">Encryption</mat-checkbox>
+  </div>
+  <div>
+    <mat-file-upload [labelText]="''" (selectedFilesChanged)="onSelectedFilesChanged($event)"
+    [acceptedTypes]="'.png, .jpg, .jpeg'" (uploadClicked)="upload()" [uploadButtonText]="'Upload'">
+    </mat-file-upload>
+  </div>
+
+  <div class="delete-box">
+    <mat-form-field class="example-full-width">
+      <mat-label>Id</mat-label>
+      <input matInput [(ngModel)]="idToBeDeleted">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="deleteRecord()">Delete record</button>
+  </div>
+</div>
+<!--
+  <div class="col-md-3" >
+    <div class="view">
+      <img id="qr_img" class="img-fluid" style="height: 200px; width: 200px;">
+    </div>
+  <div>
+</div>
+
+-->

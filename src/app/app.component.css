@@ -1,0 +1,27 @@
+.body{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.header{
+    background: #3f51b5;
+    height: 100px;
+    text-align: center;
+}
+
+.header h1{
+    padding-top: 40px;
+    color: white;
+}
+
+.checkbox{
+    padding-left: 10px;
+}
+
+button {
+    margin-left: 10px;
+}
+
+.delete-box{
+    padding-top: 60px;
+}

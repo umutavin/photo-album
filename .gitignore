@@ -1,0 +1,9 @@
+#Config File
+bucketconfig.ts
+
+#vscode Settings
+*.vscode
+
+.DS_Store
+
+node_modules
